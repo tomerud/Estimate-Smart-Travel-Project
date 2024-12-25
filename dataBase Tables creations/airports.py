@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS airports (
     FOREIGN KEY (municipality) REFERENCES top_touristic_cities(city) ON DELETE CASCADE
 );
 """
-
+print("test")
 # Execute the query to create the table
 cursor.execute(create_airports_table_query)
 conn.commit()
